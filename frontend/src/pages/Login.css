@@ -1,0 +1,154 @@
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+}
+
+.login-box {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 100%;
+  max-width: 450px;
+}
+
+.login-box h1 {
+  margin: 0 0 10px 0;
+  font-size: 28px;
+  color: #333;
+  text-align: center;
+}
+
+.login-box h2 {
+  margin: 0 0 30px 0;
+  font-size: 16px;
+  color: #666;
+  font-weight: normal;
+  text-align: center;
+}
+
+.login-form {
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #333;
+  font-size: 14px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.form-group input:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+
+.error-message {
+  background-color: #fee;
+  color: #c33;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  border: 1px solid #fcc;
+}
+
+.btn-login {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.btn-login:hover:not(:disabled) {
+  transform: translateY(-2px);
+}
+
+.btn-login:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.demo-accounts {
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+.demo-accounts h3 {
+  margin: 0 0 15px 0;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+}
+
+.demo-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.btn-demo {
+  padding: 8px 16px;
+  background: white;
+  color: #667eea;
+  border: 2px solid #667eea;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-demo:hover:not(:disabled) {
+  background: #667eea;
+  color: white;
+}
+
+.btn-demo:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (max-width: 500px) {
+  .login-box {
+    padding: 30px 20px;
+  }
+  
+  .demo-buttons {
+    flex-direction: column;
+  }
+  
+  .btn-demo {
+    width: 100%;
+  }
+}

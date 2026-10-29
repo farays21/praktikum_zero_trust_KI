@@ -1,0 +1,28 @@
+{
+  "name": "praktikum-zero-trust",
+  "version": "1.0.0",
+  "description": "Praktikum Zero Trust Security - Academic Information System",
+  "private": true,
+  "main": "shared/config/index.js",
+  "scripts": {
+    "db:init": "node shared/db/init.js",
+    "db:seed": "node shared/db/seed.js",
+    "db:verify": "node shared/db/verify.js",
+    "db:setup": "node shared/db/init.js && node shared/db/seed.js && node shared/db/verify.js",
+    "gateway": "node gateway/server.js",
+    "service:nilai": "node services/nilai/server.js",
+    "service:transkrip": "node services/transkrip/server.js",
+    "test:auth": "node tests/auth.test.js",
+    "test:services": "node tests/services.test.js",
+    "test:services:isolated": "node tests/run-isolated.js",
+    "test:all": "node tests/auth.test.js && node tests/run-isolated.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^16.4.7",
+    "express": "^5.3.0",
+    "jsonwebtoken": "^9.0.3"
+  }
+}
